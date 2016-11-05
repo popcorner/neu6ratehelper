@@ -13,9 +13,9 @@
 // @include		http://bt.neu6.edu.cn/forum.php?mod=viewthread*
 // @require		http://bt.neu6.edu.cn/static/js/mobile/jquery-1.8.3.min.js
 // @icon		http://bt.neu6.edu.cn/favicon.ico
-// @updateURL	none
-// @downloadURL	none
-// @supportURL	http://bt.neu6.edu.cn/thread-1562575-1-1.html
+// @updateURL	https://github.com/popcorner/neu6ratehelper/raw/master/neu6ratehelper.user.js
+// @downloadURL	https://github.com/popcorner/neu6ratehelper/raw/master/neu6ratehelper.user.js
+// @supportURL	http://bt.neu6.edu.cn/thread-1565257-1-1.html
 // ==/UserScript==
 
 var jq = jQuery.noConflict();
