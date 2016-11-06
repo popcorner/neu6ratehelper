@@ -3,7 +3,7 @@
 // @name:en		neu6ratehelper
 // @namespace	https://github.com/popcorner/neu6ratehelper
 // @description	ratehelper
-// @version		1.0.0
+// @version		1.0.1
 // @author		popcorner
 // @grant		unsafeWindow
 // @grant		GM_getValue
@@ -64,6 +64,7 @@ function openRate(target) {
     var postget = function(){
         var ratehtml = jq('#fwin_temp_rate').html();
         jq('#fwin_temp_r').remove();
+        clearTimeout(loadingst);
         showWindow('rate',ratehtml,'html');
         if(GM_getValue('setoption2')) {
             jq('#scoreoption2').html('<li>'+JSON.parse(GM_getValue('setoption2')).join('</li><li>')+'</li>');
