@@ -3,7 +3,7 @@
 // @name:en		neu6ratehelper
 // @namespace	https://github.com/popcorner/neu6ratehelper
 // @description	ratehelper
-// @version		1.0.2
+// @version		1.0.3
 // @author		popcorner
 // @grant		unsafeWindow
 // @grant		GM_getValue
@@ -79,8 +79,8 @@ function openRate(target) {
             reasonselector = jq('#reasonselect').html();
         }
         if(GM_getValue('setnewstyle')) {
-            var newstylehtml = '<h4 style="width:auto"><a onclick="showselect(this, \'reason\', \'reasonselect\')" class="dpbtn y" href="javascript:;">^</a>\u53ef\u9009\u8bc4\u5206\u7406\u7531:</h4><p class="reason_slct"><textarea name="reason"'+
-                ' id="reason" class="pt" onkeyup="seditor_ctlent(event, \'$(\\\'rateform\\\').ratesubmit.click()\')"></textarea></p><ul id="reasonselect" style="display: none">'+ reasonselector +'</ul>';
+            var newstylehtml = '<h4 style="width:auto"><a onclick="showselect(this, \'reason\', \'reasonselect\')" class="dpbtn y" href="javascript:;">^</a>\u53ef\u9009\u8bc4\u5206\u7406\u7531:</h4><p class="reason_slct">'+
+                '<input type="text" name="reason" id="reason" class="pt" onkeyup="seditor_ctlent(event, \'$(\\\'rateform\\\').ratesubmit.click()\')"></p><ul id="reasonselect" style="display: none">'+ reasonselector +'</ul>';
             jq('#rateform>.c>.tpclg').html(newstylehtml);
         } else if(GM_getValue('setreason')) {
             jq('#reasonselect').html(reasonselector);
